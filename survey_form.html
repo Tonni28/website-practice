@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</h1></title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the system</p>
+    <form id="survey-form">
+        <h3>Name</h3>
+        <input id="name" type="text" required>
+        <h3>Email</h3>
+        <input id="email" type="email">
+        <h3>Age</h3>
+        <input type="number" id="number" min="18" max="90">
+        <h3>Would you recommend our system to a friend?</h3>
+        <input name="recommend" type="radio">Definitely
+        <br>
+        <input name="recommend"type="radio">Maybe
+        <br>
+        <input name="recommend" type="radio">Not sure
+        <h3>What is your favourite feature?</h3>
+        <select>
+          <option value="">Select an option</option>
+          <option value="a">a</option>
+          <option value="b">b</option>
+        </select>
+        <h3>What would you like to see improved?(Check all that apply)</h3>
+        <input type="checkbox">Front-end Projects
+        <br>
+        <input type="checkbox">Back-end Projects
+        <br>
+        <input type="checkbox">Data Visualization
+        <br>
+        <input type="checkbox">Challenges
+
+    </form>
+   
+    
+  </body>
+</html>

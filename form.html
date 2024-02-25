@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+    <main>
+    <div>
+    <h1>Application Form</h1>
+    <p class="description">Read carefully and fill the form</p>
+    </div>
+    <section>
+        <h3>General Questions</h3>
+        <hr>
+        <p>Applicant Name: <input name="Applicant-name" id="Applicant-name" type="text"></p>
+        <p>Birth Date: <input name="birth-date" id="birth-date" type="date"></p>
+        <fieldset>
+            <legend>Gender: </legend>
+            <input type="radio" name="Gender" id="gender">Male
+            <input type="radio" name="Gender" id="gender">Female
+        </fieldset>
+    <p>Mobile Number: <input name="mobile-no" id="mobile-no" type="number"></p>
+    <p>Address: <textarea name="address"></textarea></p>
+    <p>Email: <input name="email" type="email"></p>
+    <fieldset>
+        <legend>Status: </legend>
+        <input type="checkbox" name="single">Single
+        <input type="checkbox" name="married">Married
+        <input type="checkbox" name="devorced">Devorced
+        <input type="checkbox" name="others">Others
+    </fieldset>
+    <section>
+    <section>
+        <h3>Payment </h3>
+        <hr>
+        <p>Payment method: 
+            <select>
+                <option value="">Select one
+                <option value="bkash">Bkash
+                <option value="nagad">Nagad
+            </select>    
+    </section>
+    <input id="submit" type="submit" value="Submit">
+</main>
+</body>
+</html>
