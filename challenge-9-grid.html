@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge-9</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(6,1fr);
+            grid-auto-rows: 800px;
+           
+            
+            
+        }
+        .items{
+            background-color: rgb(223, 248, 33);
+            text-align: center;
+        }
+        #items1{
+           
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            border: 0px white solid;
+            border-right-width: 7px;
+        }
+        #items2{
+            
+            grid-column-start: 2;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border: 0px white solid;
+            border-bottom-width: 7px;
+           
+        }
+        #items3{
+            
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 6;
+            border: 0px white solid;
+            border-right-width: 7px;
+            border-bottom-width: 7px;
+           
+        }
+        #items4{
+            
+            grid-column-start: 6;
+            grid-column-end: 7;
+            grid-row-start: 2;
+            grid-row-end: 6;
+            border: 0px white solid;
+            border-bottom-width: 7px;
+           
+        }
+        #items5{
+            
+            grid-column-start: 2;
+            grid-column-end: 7;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="items1">Nav
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem iusto suscipit odit eligendi error voluptatibus sint eius voluptas facilis accusamus delectus est provident distinctio cum ipsum sed, officiis deleniti aperiam sequi iure excepturi dignissimos! Excepturi animi consequatur repellendus expedita nulla umenda </p>
+        </div>
+        <div class="items" id="items2">Header</div>
+        <div class="items" id="items3">Article</div>
+        <div class="items" id="items4">Ads</div>
+        <div class="items" id="items5">Footer</div>
+    </div>
+</body>
+</html>
