@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(122, 118, 118);
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            background-color: white;
+            height: 400px;
+            width: 500px;
+            position: absolute;
+            left: 25%;
+            top:25%
+        }
+        button{
+            padding: 20px;
+            background-color: seagreen;
+            font-size: 30px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        #remove{
+            background-color: rgb(160, 24, 9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Stanger</h1>
+        <button id="add">Add friend</button>
+        <button id="remove">Remove</button>
+    </div>
+    <script>
+        var addFriend = document.getElementById("add");
+        var isStatus = document.querySelector("h1");
+        var removeFriend = document.querySelector("#remove");
+        addFriend . addEventListener("click",function () {
+            isStatus.innerHTML="Friends";
+        }) 
+        removeFriend . addEventListener("click",function () {
+            isStatus.innerHTML="Removed";
+        }) 
+    </script>
+</body>
+</html>
