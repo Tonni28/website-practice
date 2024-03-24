@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
     <style>
         body{
             background-color: rgb(122, 118, 118);
@@ -25,27 +28,42 @@
             margin: 20px;
             cursor: pointer;
         }
-        #remove{
+      /*  #remove{
             background-color: rgb(160, 24, 9);
-        }
+        } */
     </style>
 </head>
 <body>
     <div class="container">
         <h1> Stanger</h1>
-        <button id="add">Add friend</button>
-        <button id="remove">Remove</button>
+        <button id="add"></i>Add friend</button>
+      <!--  <button id="remove">Remove</button> -->
     </div>
     <script>
         var addFriend = document.getElementById("add");
         var isStatus = document.querySelector("h1");
-        var removeFriend = document.querySelector("#remove");
+        var flag = 0;
+     //   var removeFriend = document.querySelector("#remove");
         addFriend . addEventListener("click",function () {
+            if(flag == 0){
             isStatus.innerHTML="Friends";
+            isStatus.style.color = "green";
+            addFriend.innerHTML = "Remove friend";
+            flag = 1;
+            }
+            else{
+            isStatus.innerHTML="Stranger";
+            isStatus.style.color = "red";
+            addFriend.innerHTML = "Add friend";
+            flag = 0;
+            }
         }) 
-        removeFriend . addEventListener("click",function () {
-            isStatus.innerHTML="Removed";
-        }) 
+       /* removeFriend . addEventListener("click",function () {
+            isStatus.innerHTML="Stanger";
+            isStatus.style.color = "black";
+            addFriend.style.backgroundColor = "seagreen";
+            removeFriend.style.backgroundColor = "#dadada"
+        }) */
     </script>
 </body>
 </html>
